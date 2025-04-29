@@ -1,0 +1,20 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="autorizacia.RegistrationPage">
+    <StackLayout Padding="20" VerticalOptions="Center">
+        <Label Text="ПОЧТА" FontAttributes="Bold" />
+        <Entry x:Name="EmailEntry" Placeholder="Введите ваше мыло" Keyboard="Email" />
+
+        <Label Text="ПАРОЛЬ" FontAttributes="Bold" Margin="0,10,0,0" />
+        <Entry x:Name="PasswordEntry" Placeholder="Введите ваш пароль" IsPassword="True" />
+
+        <Label Text="ПОВТОРНЫЙ ВВОД ПАРОЛЯ" FontAttributes="Bold" Margin="0,10,0,0" />
+        <Entry x:Name="ConfirmPasswordEntry" Placeholder="Подтвердите ваш пароль" IsPassword="True" />
+
+        <Button Text="ЗАРЕГАТЬСЯ" 
+                BackgroundColor="#303F9F" 
+                TextColor="White" 
+                Margin="0,20,0,0" 
+                Clicked="OnRegisterClicked" />
+    </StackLayout>
+</ContentPage>

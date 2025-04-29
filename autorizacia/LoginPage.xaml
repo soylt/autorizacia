@@ -1,0 +1,29 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="autorizacia.LoginPage"
+             Title="Вход на страницу">
+    <StackLayout Padding="20" VerticalOptions="Center">
+        <Label Text="ПОЧТА" FontAttributes="Bold" />
+        <Entry x:Name="EmailEntry" Placeholder="Введите ваш почту" Keyboard="Email" />
+
+        <Label Text="ПАРОЛЬ" FontAttributes="Bold" Margin="0,10,0,0" />
+        <Entry x:Name="PasswordEntry" Placeholder="Введите ваш пароль" IsPassword="True" />
+
+        <StackLayout Orientation="Horizontal" Margin="0,10,0,0">
+            <CheckBox x:Name="RememberMeCheckBox" />
+            <Label Text="Remember Me?" VerticalOptions="Center" />
+        </StackLayout>
+
+        <Button Text="ВХОД" 
+                BackgroundColor="#303F9F" 
+                TextColor="White" 
+                Margin="0,20,0,0" 
+                Clicked="OnLoginClicked" />
+
+        <Button Text="Зарег новый пользователь?" 
+                TextColor="#303F9F" 
+                BackgroundColor="Transparent" 
+                Margin="0,10,0,0" 
+                Clicked="OnRegisterClicked" />
+    </StackLayout>
+</ContentPage>
